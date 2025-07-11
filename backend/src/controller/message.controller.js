@@ -1,5 +1,6 @@
 import User from "../models/user.model.js"; // Import the User model
 import Message from "../models/message.model.js"; // Import the Message model
+import cloudinary from "../lib/cloudinary.js";
 
 export const getUsersForSidebar = async (req, res) => { 
 try {
@@ -8,7 +9,7 @@ try {
     res.status(200).json(filteredUsers); // Send the filtered users as a response
 } catch (error) {
     console.log("Error in getUsersForSidebar controller", error.message);
-    res.status(200).json({ message: "Internal server error"});
+    res.status(500).json({ error: "Internal server error"});
     
 }
 
@@ -22,8 +23,8 @@ export const getMessages = async (req, res) => {
             $or: [
                 { senderId:myId, receiverId: userToChatId }, // Messages sent by the user to the chat partner
                 { senderId: userToChatId, receiverId: myId } // Messages sent by the chat partner to the user
-            ]
-        })
+            ],
+        });
         res.status(200).json(messages); // Send the messages as a response
     } catch (error) {
         console.log("Error in getMessages controller", error.message);

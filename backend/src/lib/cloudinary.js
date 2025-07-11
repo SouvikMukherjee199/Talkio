@@ -1,8 +1,8 @@
-// lib/cloudinary.js
-import { v2 as cloudinary } from 'cloudinary';
-import dotenv from 'dotenv';
+import { v2 as cloudinary } from "cloudinary";
 
-dotenv.config(); // Make sure this runs before accessing env vars
+import { config } from "dotenv";
+
+config();
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,

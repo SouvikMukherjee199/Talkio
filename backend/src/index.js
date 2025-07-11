@@ -16,7 +16,9 @@ const app = express();
 const PORT = process.env.PORT ;
 
 // Middleware to parse JSON bodies
-app.use(express.json());
+// app.use(express.json());
+app.use(express.json({ limit: '10mb' }));
+app.use(express.urlencoded({ extended: true, limit: '10mb' })); // Enabling Express server to handle larger files greater than default 100KB
 app.use(cookieParser());
 // CORS configuration
 app.use(cors({
@@ -25,7 +27,7 @@ app.use(cors({
 }));
 
 app.use("/api/auth", authRoutes);
-app.use("/api/message", messageRoutes);
+app.use("/api/messages", messageRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
