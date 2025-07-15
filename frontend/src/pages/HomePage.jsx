@@ -7,7 +7,7 @@ import ChatContainer from '../components/ChatContainer'
 const HomePage = () => {
   // const {selectedUser } = useChatStore((state) => ({
   //   selectedUser: state.selectedUser,
-  // }))
+  // })) -> Avoided for causing infinite loop
   const selectedUser = useChatStore((state) => state.selectedUser);
 
   return (
