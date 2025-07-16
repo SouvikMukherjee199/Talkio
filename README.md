@@ -22,7 +22,7 @@ A full-stack chat application built with <strong>MERN Stack</strong>, <strong>Zu
 
 <!-- Screenshot 2 -->
 <p align="center">
-  <img src="/images/Welcome%20Page.png" alt="Welcome Page" width="600" />
+  <img src="/images/Log-in success.png" alt="Welcome Page" width="600" />
   <br />
   <em>👋 Welcome Page</em>
 </p>
@@ -64,7 +64,7 @@ A full-stack chat application built with <strong>MERN Stack</strong>, <strong>Zu
 
 <!-- Screenshot 8 -->
 <p align="center">
-  <img src="/images/Text%20Chat.png" alt="Text Chat" width="600" />
+  <img src="/images/Text in Text Input.png" alt="Text Chat" width="600" />
   <br />
   <em>💬 Text Chat Interface</em>
 </p>
@@ -92,7 +92,7 @@ A full-stack chat application built with <strong>MERN Stack</strong>, <strong>Zu
 
 <!-- Screenshot 12 -->
 <p align="center">
-  <img src="/images/After%20having%20shared%20image.png" alt="Image Shared" width="600" />
+  <img src="/images/Image sharing.png" alt="Image Shared" width="600" />
   <br />
   <em>📨 After Image is Shared</em>
 </p>
