@@ -96,3 +96,9 @@ A full-stack chat application built with <strong>MERN Stack</strong>, <strong>Zu
   <br />
   <em>📨 After Image is Shared</em>
 </p>
+<!-- Screenshot 12 -->
+<p align="center">
+  <img src="/images/Profile Pic_Change.png" alt="Profile Picture Change" width="600" />
+  <br />
+  <em>🖼️ Profile Picture Update</em>
+</p>
